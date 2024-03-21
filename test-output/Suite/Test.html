@@ -1,0 +1,819 @@
+<html>
+<head>
+<title>TestNG:  Test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>11/23/0</td>
+</tr><tr>
+<td>Started on:</td><td>Wed Mar 20 15:23:50 IST 2024</td>
+</tr>
+<tr><td>Total time:</td><td>49 seconds (49104 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td>sanity </td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='testcases.Money_Control_L1_TestCases.updateQuantity()'><b>updateQuantity</b><br>Test class: testcases.Money_Control_L1_TestCases<br>Test method: Update the quantity of one of the product. Increase quantity by 1</td>
+<td><div><pre>java.lang.AssertionError: expected object to not be null
+	at testcases.Money_Control_L1_TestCases.updateQuantity(Money_Control_L1_TestCases.java:578)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1623)
+... Removed 13 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2141688902", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2141688902'><pre>java.lang.AssertionError: expected object to not be null
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.assertNotNull(Assert.java:1484)
+	at org.testng.Assert.assertNotNull(Assert.java:1468)
+	at testcases.Money_Control_L1_TestCases.updateQuantity(Money_Control_L1_TestCases.java:578)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1623)
+</pre></div></td>
+<td>0</td>
+<td>testcases.Money_Control_L1_TestCases@2d6c53fc</td></tr>
+<tr>
+<td title='testcases.Money_Control_L1_TestCases.seleniumu_Ruby_is_present()'><b>seleniumu_Ruby_is_present</b><br>Test class: testcases.Money_Control_L1_TestCases<br>Test method: Check of “Arrivals” section has selenium ruby is present</td>
+<td><div><pre>java.lang.AssertionError: expected object to not be null
+	at testcases.Money_Control_L1_TestCases.seleniumu_Ruby_is_present(Money_Control_L1_TestCases.java:222)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1623)
+... Removed 13 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1892539400", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1892539400'><pre>java.lang.AssertionError: expected object to not be null
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.assertNotNull(Assert.java:1484)
+	at org.testng.Assert.assertNotNull(Assert.java:1468)
+	at testcases.Money_Control_L1_TestCases.seleniumu_Ruby_is_present(Money_Control_L1_TestCases.java:222)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1623)
+</pre></div></td>
+<td>0</td>
+<td>testcases.Money_Control_L1_TestCases@2d6c53fc</td></tr>
+<tr>
+<td title='testcases.Money_Control_L1_TestCases.Total_Defined()'><b>Total_Defined</b><br>Test class: testcases.Money_Control_L1_TestCases<br>Test method: Check if we have total defined after quantity.</td>
+<td><div><pre>java.lang.AssertionError: expected object to not be null
+	at testcases.Money_Control_L1_TestCases.Total_Defined(Money_Control_L1_TestCases.java:456)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1623)
+... Removed 13 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace613736306", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace613736306'><pre>java.lang.AssertionError: expected object to not be null
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.assertNotNull(Assert.java:1484)
+	at org.testng.Assert.assertNotNull(Assert.java:1468)
+	at testcases.Money_Control_L1_TestCases.Total_Defined(Money_Control_L1_TestCases.java:456)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1623)
+</pre></div></td>
+<td>0</td>
+<td>testcases.Money_Control_L1_TestCases@2d6c53fc</td></tr>
+<tr>
+<td title='testcases.Money_Control_L1_TestCases.Tax_Defined_in_correct_Format()'><b>Tax_Defined_in_correct_Format</b><br>Test class: testcases.Money_Control_L1_TestCases<br>Test method: Check if we have Tax defined in correct format or not.</td>
+<td><div><pre>java.lang.AssertionError: expected object to not be null
+	at testcases.Money_Control_L1_TestCases.Tax_Defined_in_correct_Format(Money_Control_L1_TestCases.java:506)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1623)
+... Removed 13 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace977834606", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace977834606'><pre>java.lang.AssertionError: expected object to not be null
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.assertNotNull(Assert.java:1484)
+	at org.testng.Assert.assertNotNull(Assert.java:1468)
+	at testcases.Money_Control_L1_TestCases.Tax_Defined_in_correct_Format(Money_Control_L1_TestCases.java:506)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1623)
+</pre></div></td>
+<td>0</td>
+<td>testcases.Money_Control_L1_TestCases@2d6c53fc</td></tr>
+<tr>
+<td title='testcases.Money_Control_L1_TestCases.navigate_to_Billing_Details_page()'><b>navigate_to_Billing_Details_page</b><br>Test class: testcases.Money_Control_L1_TestCases<br>Test method: On clicking it, validate do we navigate to Billing Details page having “Billing Details” as heading or not</td>
+<td><div><pre>java.lang.AssertionError: expected [true] but found [false]
+	at testcases.Money_Control_L1_TestCases.navigate_to_Billing_Details_page(Money_Control_L1_TestCases.java:653)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1623)
+... Removed 14 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1306435865", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1306435865'><pre>java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertTrue(Assert.java:57)
+	at org.testng.Assert.assertTrue(Assert.java:67)
+	at testcases.Money_Control_L1_TestCases.navigate_to_Billing_Details_page(Money_Control_L1_TestCases.java:653)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1623)
+</pre></div></td>
+<td>0</td>
+<td>testcases.Money_Control_L1_TestCases@2d6c53fc</td></tr>
+<tr>
+<td title='testcases.Money_Control_L1_TestCases.Proceed_to_checkout()'><b>Proceed_to_checkout</b><br>Test class: testcases.Money_Control_L1_TestCases<br>Test method: Validate if we have a “Proceed to checkout” button or not.</td>
+<td><div><pre>java.lang.AssertionError: expected object to not be null
+	at testcases.Money_Control_L1_TestCases.Proceed_to_checkout(Money_Control_L1_TestCases.java:613)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1623)
+... Removed 13 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace299225628", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace299225628'><pre>java.lang.AssertionError: expected object to not be null
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.assertNotNull(Assert.java:1484)
+	at org.testng.Assert.assertNotNull(Assert.java:1468)
+	at testcases.Money_Control_L1_TestCases.Proceed_to_checkout(Money_Control_L1_TestCases.java:613)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1623)
+</pre></div></td>
+<td>0</td>
+<td>testcases.Money_Control_L1_TestCases@2d6c53fc</td></tr>
+<tr>
+<td title='testcases.Money_Control_L1_TestCases.Quantity_Defined()'><b>Quantity_Defined</b><br>Test class: testcases.Money_Control_L1_TestCases<br>Test method: Check if we have quantity defined after product price.</td>
+<td><div><pre>java.lang.AssertionError: expected object to not be null
+	at testcases.Money_Control_L1_TestCases.Quantity_Defined(Money_Control_L1_TestCases.java:422)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1623)
+... Removed 13 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace470364226", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace470364226'><pre>java.lang.AssertionError: expected object to not be null
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.assertNotNull(Assert.java:1484)
+	at org.testng.Assert.assertNotNull(Assert.java:1468)
+	at testcases.Money_Control_L1_TestCases.Quantity_Defined(Money_Control_L1_TestCases.java:422)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1623)
+</pre></div></td>
+<td>0</td>
+<td>testcases.Money_Control_L1_TestCases@2d6c53fc</td></tr>
+<tr>
+<td title='testcases.Money_Control_L1_TestCases.Total_Defined_in_Correct_Format()'><b>Total_Defined_in_Correct_Format</b><br>Test class: testcases.Money_Control_L1_TestCases<br>Test method: Check if we have total defined in correct format or not.</td>
+<td><div><pre>java.lang.AssertionError: expected object to not be null
+	at testcases.Money_Control_L1_TestCases.Total_Defined_in_Correct_Format(Money_Control_L1_TestCases.java:473)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1623)
+... Removed 13 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace626937456", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace626937456'><pre>java.lang.AssertionError: expected object to not be null
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.assertNotNull(Assert.java:1484)
+	at org.testng.Assert.assertNotNull(Assert.java:1468)
+	at testcases.Money_Control_L1_TestCases.Total_Defined_in_Correct_Format(Money_Control_L1_TestCases.java:473)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1623)
+</pre></div></td>
+<td>0</td>
+<td>testcases.Money_Control_L1_TestCases@2d6c53fc</td></tr>
+<tr>
+<td title='testcases.Money_Control_L1_TestCases.Price_Defined()'><b>Price_Defined</b><br>Test class: testcases.Money_Control_L1_TestCases<br>Test method: Check if we have price defined after product name.</td>
+<td><div><pre>java.lang.AssertionError: expected object to not be null
+	at testcases.Money_Control_L1_TestCases.Price_Defined(Money_Control_L1_TestCases.java:386)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1623)
+... Removed 13 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace55227557", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace55227557'><pre>java.lang.AssertionError: expected object to not be null
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.assertNotNull(Assert.java:1484)
+	at org.testng.Assert.assertNotNull(Assert.java:1468)
+	at testcases.Money_Control_L1_TestCases.Price_Defined(Money_Control_L1_TestCases.java:386)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1623)
+</pre></div></td>
+<td>0</td>
+<td>testcases.Money_Control_L1_TestCases@2d6c53fc</td></tr>
+<tr>
+<td title='testcases.Money_Control_L1_TestCases.Click_Proceed_to_checkout()'><b>Click_Proceed_to_checkout</b><br>Test class: testcases.Money_Control_L1_TestCases<br>Test method: Click on “Proceed to checkout” button.</td>
+<td><div><pre>java.lang.AssertionError: expected object to not be null
+	at testcases.Money_Control_L1_TestCases.Click_Proceed_to_checkout(Money_Control_L1_TestCases.java:631)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1623)
+... Removed 13 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1658078852", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1658078852'><pre>java.lang.AssertionError: expected object to not be null
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.assertNotNull(Assert.java:1484)
+	at org.testng.Assert.assertNotNull(Assert.java:1468)
+	at testcases.Money_Control_L1_TestCases.Click_Proceed_to_checkout(Money_Control_L1_TestCases.java:631)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1623)
+</pre></div></td>
+<td>0</td>
+<td>testcases.Money_Control_L1_TestCases@2d6c53fc</td></tr>
+<tr>
+<td title='testcases.Money_Control_L1_TestCases.navigateToHomePage()'><b>navigateToHomePage</b><br>Test class: testcases.Money_Control_L1_TestCases<br>Test method: Check if the control is successfully navigated to “Home” page.</td>
+<td><div><pre>java.lang.AssertionError: expected [true] but found [false]
+	at testcases.Money_Control_L1_TestCases.navigateToHomePage(Money_Control_L1_TestCases.java:191)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1623)
+... Removed 14 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace717080364", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace717080364'><pre>java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertTrue(Assert.java:57)
+	at org.testng.Assert.assertTrue(Assert.java:67)
+	at testcases.Money_Control_L1_TestCases.navigateToHomePage(Money_Control_L1_TestCases.java:191)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1623)
+</pre></div></td>
+<td>0</td>
+<td>testcases.Money_Control_L1_TestCases@2d6c53fc</td></tr>
+<tr>
+<td title='testcases.Money_Control_L1_TestCases.verifyNavigateToHomePage()'><b>verifyNavigateToHomePage</b><br>Test class: testcases.Money_Control_L1_TestCases<br>Test method: Verify navigate to the home page</td>
+<td><div><pre>java.lang.AssertionError: expected [true] but found [false]
+	at testcases.Money_Control_L1_TestCases.verifyNavigateToHomePage(Money_Control_L1_TestCases.java:63)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1623)
+... Removed 14 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace421818358", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace421818358'><pre>java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertTrue(Assert.java:57)
+	at org.testng.Assert.assertTrue(Assert.java:67)
+	at testcases.Money_Control_L1_TestCases.verifyNavigateToHomePage(Money_Control_L1_TestCases.java:63)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1623)
+</pre></div></td>
+<td>0</td>
+<td>testcases.Money_Control_L1_TestCases@2d6c53fc</td></tr>
+<tr>
+<td title='testcases.Money_Control_L1_TestCases.verify_message()'><b>verify_message</b><br>Test class: testcases.Money_Control_L1_TestCases<br>Test method: Check if product added message is shown when product is added to basket. Check for message</td>
+<td><div><pre>java.lang.AssertionError: expected [true] but found [false]
+	at testcases.Money_Control_L1_TestCases.verify_message(Money_Control_L1_TestCases.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1623)
+... Removed 14 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1613215061", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1613215061'><pre>java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertTrue(Assert.java:57)
+	at org.testng.Assert.assertTrue(Assert.java:67)
+	at testcases.Money_Control_L1_TestCases.verify_message(Money_Control_L1_TestCases.java:317)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1623)
+</pre></div></td>
+<td>0</td>
+<td>testcases.Money_Control_L1_TestCases@2d6c53fc</td></tr>
+<tr>
+<td title='testcases.Money_Control_L1_TestCases.navigate_to_Shop_page()'><b>navigate_to_Shop_page</b><br>Test class: testcases.Money_Control_L1_TestCases<br>Test method: Check if the control is successfully navigated to “Shop” page.</td>
+<td><div><pre>java.lang.AssertionError: expected [true] but found [false]
+	at testcases.Money_Control_L1_TestCases.navigate_to_Shop_page(Money_Control_L1_TestCases.java:100)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1623)
+... Removed 14 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2056946377", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2056946377'><pre>java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertTrue(Assert.java:57)
+	at org.testng.Assert.assertTrue(Assert.java:67)
+	at testcases.Money_Control_L1_TestCases.navigate_to_Shop_page(Money_Control_L1_TestCases.java:100)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1623)
+</pre></div></td>
+<td>0</td>
+<td>testcases.Money_Control_L1_TestCases@2d6c53fc</td></tr>
+<tr>
+<td title='testcases.Money_Control_L1_TestCases.ValidateAnRemoveMessage()'><b>ValidateAnRemoveMessage</b><br>Test class: testcases.Money_Control_L1_TestCases<br>Test method: Validate if we get a message after removing an item with its name or not.</td>
+<td><div><pre>java.lang.AssertionError: expected [true] but found [false]
+	at testcases.Money_Control_L1_TestCases.ValidateAnRemoveMessage(Money_Control_L1_TestCases.java:563)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1623)
+... Removed 14 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace683044005", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace683044005'><pre>java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertTrue(Assert.java:57)
+	at org.testng.Assert.assertTrue(Assert.java:67)
+	at testcases.Money_Control_L1_TestCases.ValidateAnRemoveMessage(Money_Control_L1_TestCases.java:563)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1623)
+</pre></div></td>
+<td>0</td>
+<td>testcases.Money_Control_L1_TestCases@2d6c53fc</td></tr>
+<tr>
+<td title='testcases.Money_Control_L1_TestCases.navigateTobasketpage()'><b>navigateTobasketpage</b><br>Test class: testcases.Money_Control_L1_TestCases<br>Test method: Check if it is navigated to basket page</td>
+<td><div><pre>java.lang.AssertionError: expected [true] but found [false]
+	at testcases.Money_Control_L1_TestCases.navigateTobasketpage(Money_Control_L1_TestCases.java:137)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1623)
+... Removed 14 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace265995404", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace265995404'><pre>java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertTrue(Assert.java:57)
+	at org.testng.Assert.assertTrue(Assert.java:67)
+	at testcases.Money_Control_L1_TestCases.navigateTobasketpage(Money_Control_L1_TestCases.java:137)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1623)
+</pre></div></td>
+<td>0</td>
+<td>testcases.Money_Control_L1_TestCases@2d6c53fc</td></tr>
+<tr>
+<td title='testcases.Money_Control_L1_TestCases.Home_menu()'><b>Home_menu</b><br>Test class: testcases.Money_Control_L1_TestCases<br>Test method: Check if “Home” Menu Option is available on navigated page.</td>
+<td><div><pre>java.lang.AssertionError: expected object to not be null
+	at testcases.Money_Control_L1_TestCases.Home_menu(Money_Control_L1_TestCases.java:151)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1623)
+... Removed 13 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace494279968", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace494279968'><pre>java.lang.AssertionError: expected object to not be null
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.assertNotNull(Assert.java:1484)
+	at org.testng.Assert.assertNotNull(Assert.java:1468)
+	at testcases.Money_Control_L1_TestCases.Home_menu(Money_Control_L1_TestCases.java:151)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1623)
+</pre></div></td>
+<td>0</td>
+<td>testcases.Money_Control_L1_TestCases@2d6c53fc</td></tr>
+<tr>
+<td title='testcases.Money_Control_L1_TestCases.navigates_to_Selenium_Ruby()'><b>navigates_to_Selenium_Ruby</b><br>Test class: testcases.Money_Control_L1_TestCases<br>Test method: Check if the control is successfully navigated to Product Details page.</td>
+<td><div><pre>java.lang.AssertionError: expected [true] but found [false]
+	at testcases.Money_Control_L1_TestCases.navigates_to_Selenium_Ruby(Money_Control_L1_TestCases.java:263)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1623)
+... Removed 14 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1505106318", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1505106318'><pre>java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertTrue(Assert.java:57)
+	at org.testng.Assert.assertTrue(Assert.java:67)
+	at testcases.Money_Control_L1_TestCases.navigates_to_Selenium_Ruby(Money_Control_L1_TestCases.java:263)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1623)
+</pre></div></td>
+<td>0</td>
+<td>testcases.Money_Control_L1_TestCases@2d6c53fc</td></tr>
+<tr>
+<td title='testcases.Money_Control_L1_TestCases.quantity_Defined_in_correct_Format()'><b>quantity_Defined_in_correct_Format</b><br>Test class: testcases.Money_Control_L1_TestCases<br>Test method: Check if we have quantity defined in correct format or not.</td>
+<td><div><pre>java.lang.AssertionError: expected object to not be null
+	at testcases.Money_Control_L1_TestCases.quantity_Defined_in_correct_Format(Money_Control_L1_TestCases.java:439)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1623)
+... Removed 13 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace962834074", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace962834074'><pre>java.lang.AssertionError: expected object to not be null
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.assertNotNull(Assert.java:1484)
+	at org.testng.Assert.assertNotNull(Assert.java:1468)
+	at testcases.Money_Control_L1_TestCases.quantity_Defined_in_correct_Format(Money_Control_L1_TestCases.java:439)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1623)
+</pre></div></td>
+<td>0</td>
+<td>testcases.Money_Control_L1_TestCases@2d6c53fc</td></tr>
+<tr>
+<td title='testcases.Money_Control_L1_TestCases.Price_Defined_in_correct_Format()'><b>Price_Defined_in_correct_Format</b><br>Test class: testcases.Money_Control_L1_TestCases<br>Test method: Check if we have price defined in correct format or not</td>
+<td><div><pre>java.lang.AssertionError: expected object to not be null
+	at testcases.Money_Control_L1_TestCases.Price_Defined_in_correct_Format(Money_Control_L1_TestCases.java:404)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1623)
+... Removed 13 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace212464210", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace212464210'><pre>java.lang.AssertionError: expected object to not be null
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.assertNotNull(Assert.java:1484)
+	at org.testng.Assert.assertNotNull(Assert.java:1468)
+	at testcases.Money_Control_L1_TestCases.Price_Defined_in_correct_Format(Money_Control_L1_TestCases.java:404)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1623)
+</pre></div></td>
+<td>0</td>
+<td>testcases.Money_Control_L1_TestCases@2d6c53fc</td></tr>
+<tr>
+<td title='testcases.Money_Control_L1_TestCases.Tax_Defined()'><b>Tax_Defined</b><br>Test class: testcases.Money_Control_L1_TestCases<br>Test method: Check if we have Tax defined after product name.</td>
+<td><div><pre>java.lang.AssertionError: expected object to not be null
+	at testcases.Money_Control_L1_TestCases.Tax_Defined(Money_Control_L1_TestCases.java:489)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1623)
+... Removed 13 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace84558609", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace84558609'><pre>java.lang.AssertionError: expected object to not be null
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.assertNotNull(Assert.java:1484)
+	at org.testng.Assert.assertNotNull(Assert.java:1468)
+	at testcases.Money_Control_L1_TestCases.Tax_Defined(Money_Control_L1_TestCases.java:489)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1623)
+</pre></div></td>
+<td>0</td>
+<td>testcases.Money_Control_L1_TestCases@2d6c53fc</td></tr>
+<tr>
+<td title='testcases.Money_Control_L1_TestCases.CheckItem()'><b>CheckItem</b><br>Test class: testcases.Money_Control_L1_TestCases<br>Test method: Check how many items are there in cart.</td>
+<td><div><pre>java.lang.AssertionError: expected object to not be null
+	at testcases.Money_Control_L1_TestCases.CheckItem(Money_Control_L1_TestCases.java:350)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1623)
+... Removed 13 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace36921709", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace36921709'><pre>java.lang.AssertionError: expected object to not be null
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.assertNotNull(Assert.java:1484)
+	at org.testng.Assert.assertNotNull(Assert.java:1468)
+	at testcases.Money_Control_L1_TestCases.CheckItem(Money_Control_L1_TestCases.java:350)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1623)
+</pre></div></td>
+<td>0</td>
+<td>testcases.Money_Control_L1_TestCases@2d6c53fc</td></tr>
+<tr>
+<td title='testcases.Money_Control_L1_TestCases.Update_Basket()'><b>Update_Basket</b><br>Test class: testcases.Money_Control_L1_TestCases<br>Test method: Validate if we have active Update Basket button active on updating quantity or not.</td>
+<td><div><pre>java.lang.AssertionError: expected object to not be null
+	at testcases.Money_Control_L1_TestCases.Update_Basket(Money_Control_L1_TestCases.java:595)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1623)
+... Removed 13 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace378227413", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace378227413'><pre>java.lang.AssertionError: expected object to not be null
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.assertNotNull(Assert.java:1484)
+	at org.testng.Assert.assertNotNull(Assert.java:1468)
+	at testcases.Money_Control_L1_TestCases.Update_Basket(Money_Control_L1_TestCases.java:595)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1623)
+</pre></div></td>
+<td>0</td>
+<td>testcases.Money_Control_L1_TestCases@2d6c53fc</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='testcases.Money_Control_L1_TestCases.GoToCart()'><b>GoToCart</b><br>Test class: testcases.Money_Control_L1_TestCases<br>Test method:   Go to cart(Click Cart icon)</td>
+<td></td>
+<td>3</td>
+<td>testcases.Money_Control_L1_TestCases@2d6c53fc</td></tr>
+<tr>
+<td title='testcases.Money_Control_L1_TestCases.Click_on_Home()'><b>Click_on_Home</b><br>Test class: testcases.Money_Control_L1_TestCases<br>Test method: Check if “Home” Menu Option is available on navigated page.</td>
+<td></td>
+<td>3</td>
+<td>testcases.Money_Control_L1_TestCases@2d6c53fc</td></tr>
+<tr>
+<td title='testcases.Money_Control_L1_TestCases.add_to_basket()'><b>add_to_basket</b><br>Test class: testcases.Money_Control_L1_TestCases<br>Test method: Check if product details page has an option “ADD TO BASKET”.</td>
+<td></td>
+<td>3</td>
+<td>testcases.Money_Control_L1_TestCases@2d6c53fc</td></tr>
+<tr>
+<td title='testcases.Money_Control_L1_TestCases.click_Shop_Menu()'><b>click_Shop_Menu</b><br>Test class: testcases.Money_Control_L1_TestCases<br>Test method:  Click on “Shop” Menu Option</td>
+<td></td>
+<td>3</td>
+<td>testcases.Money_Control_L1_TestCases@2d6c53fc</td></tr>
+<tr>
+<td title='testcases.Money_Control_L1_TestCases.remove_option_is_present()'><b>remove_option_is_present</b><br>Test class: testcases.Money_Control_L1_TestCases<br>Test method: Validate if we have an option to remove an added product or not.</td>
+<td></td>
+<td>3</td>
+<td>testcases.Money_Control_L1_TestCases@2d6c53fc</td></tr>
+<tr>
+<td title='testcases.Money_Control_L1_TestCases.one_product_isClickable()'><b>one_product_isClickable</b><br>Test class: testcases.Money_Control_L1_TestCases<br>Test method: check one product is clickable</td>
+<td></td>
+<td>2</td>
+<td>testcases.Money_Control_L1_TestCases@2d6c53fc</td></tr>
+<tr>
+<td title='testcases.Money_Control_L1_TestCases.Apply_Coupon()'><b>Apply_Coupon</b><br>Test class: testcases.Money_Control_L1_TestCases<br>Test method:  Check if we have “APPLY COUPON” button or not.</td>
+<td></td>
+<td>3</td>
+<td>testcases.Money_Control_L1_TestCases@2d6c53fc</td></tr>
+<tr>
+<td title='testcases.Money_Control_L1_TestCases.click_on_cart()'><b>click_on_cart</b><br>Test class: testcases.Money_Control_L1_TestCases<br>Test method: Go to cart(Click Cart icon)</td>
+<td></td>
+<td>3</td>
+<td>testcases.Money_Control_L1_TestCases@2d6c53fc</td></tr>
+<tr>
+<td title='testcases.Money_Control_L1_TestCases.new_arrival_is_present()'><b>new_arrival_is_present</b><br>Test class: testcases.Money_Control_L1_TestCases<br>Test method: Check if “Home” page has a section of new arrivals.</td>
+<td></td>
+<td>3</td>
+<td>testcases.Money_Control_L1_TestCases@2d6c53fc</td></tr>
+<tr>
+<td title='testcases.Money_Control_L1_TestCases.Click_on_add_to_basket()'><b>Click_on_add_to_basket</b><br>Test class: testcases.Money_Control_L1_TestCases<br>Test method: Click on “ADD TO BASKET” option.</td>
+<td></td>
+<td>3</td>
+<td>testcases.Money_Control_L1_TestCases@2d6c53fc</td></tr>
+<tr>
+<td title='testcases.Money_Control_L1_TestCases.remove()'><b>remove</b><br>Test class: testcases.Money_Control_L1_TestCases<br>Test method: Remove a product.</td>
+<td></td>
+<td>3</td>
+<td>testcases.Money_Control_L1_TestCases@2d6c53fc</td></tr>
+</table><p>
+</body>
+</html>

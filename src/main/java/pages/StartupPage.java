@@ -6,6 +6,8 @@ import coreUtilities.utils.CommonEvents;
 
 public class StartupPage {
 	
+
+	
 	public WebDriver driver;
 	public CommonEvents commonEvents;
 	

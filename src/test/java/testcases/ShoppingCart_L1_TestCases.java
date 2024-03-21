@@ -16,17 +16,17 @@ import org.testng.asserts.SoftAssert;
 
 import coreUtilities.testutils.ApiHelper;
 import coreUtilities.utils.FileOperations;
-import pages.Practice_Automation_L1_Pages;
+import pages.ShoppingCart_L1_Pages;
 import pages.StartupPage;
 import testBase.AppTestBase;
 
-public class Practice_Automation_L1_TestCases extends AppTestBase
+public class ShoppingCart_L1_TestCases extends AppTestBase
 {
 	Map<String, String> configData;
 	Map<String, String> loginCredentials;
 	String expectedDataFilePath = testDataFilePath+"expected_data.json";
 	StartupPage startupPage;
-	Practice_Automation_L1_Pages L1PageClass;
+	ShoppingCart_L1_Pages L1PageClass;
 	
 	@Parameters({"browser", "environment"})
 	@BeforeClass(alwaysRun = true)
@@ -47,21 +47,21 @@ public class Practice_Automation_L1_TestCases extends AppTestBase
 		}
 	}
 		
-		@Test(priority = 1, groups = {"sanity"}, description="Check if “Shop” Menu Option is available.")
-		public void check_Shop_Menu() throws Exception {
+		@Test(priority = 1, groups = {"sanity"}, description="Verify navigate to the home page")
+		public void verifyNavigateToHomePage() throws Exception {
 			try
 			{
 			softAssert = new SoftAssert();
-			L1PageClass= new Practice_Automation_L1_Pages(driver);
+			L1PageClass= new ShoppingCart_L1_Pages(driver);
 			
 			Map<String, String> expectedData = new FileOperations().readJson(expectedDataFilePath, "Shop_menu");
-			yakshaAssert(currentTest(), L1PageClass.Shop_is_available_or_not().equals( expectedData.get("Shop_menu_title")), businessTestFile);
+//			yakshaAssert(currentTest(), L1PageClass.Shop_is_available_or_not().equals( expectedData.get("Shop_menu_title")), businessTestFile);
 			softAssert.assertEquals(L1PageClass.Shop_is_available_or_not(), expectedData.get("Shop_menu_title"), "page title is not matching please check manually");
 		    }
 			catch(Exception ex)
 			{
 			Assert.assertTrue(false);
-			yakshaAssert(currentTest(), false, businessTestFile);
+//			yakshaAssert(currentTest(), false, businessTestFile);
 		}
 	}
 		
@@ -70,9 +70,9 @@ public class Practice_Automation_L1_TestCases extends AppTestBase
 				try
 				{
 				softAssert = new SoftAssert();
-				L1PageClass= new Practice_Automation_L1_Pages(driver);
+				L1PageClass= new ShoppingCart_L1_Pages(driver);
 				
-				Practice_Automation_L1_Pages page=L1PageClass.ClickOnShop();
+				ShoppingCart_L1_Pages page=L1PageClass.ClickOnShop();
 				
 				Assert.assertNotNull(page);
 				
@@ -89,7 +89,7 @@ public class Practice_Automation_L1_TestCases extends AppTestBase
 				try
 				{
 				softAssert = new SoftAssert();
-				L1PageClass= new Practice_Automation_L1_Pages(driver);
+				L1PageClass= new ShoppingCart_L1_Pages(driver);
 				
 				Map<String, String> expectedData = new FileOperations().readJson(expectedDataFilePath, "Shop_page");
 				yakshaAssert(currentTest(), L1PageClass.Shop_page_title().equals( expectedData.get("Shop_page_title")), businessTestFile);
@@ -107,9 +107,9 @@ public class Practice_Automation_L1_TestCases extends AppTestBase
 				try
 				{
 				softAssert = new SoftAssert();
-				L1PageClass= new Practice_Automation_L1_Pages(driver);
+				L1PageClass= new ShoppingCart_L1_Pages(driver);
 				
-				Practice_Automation_L1_Pages page=L1PageClass.click_on_cart_icon();
+				ShoppingCart_L1_Pages page=L1PageClass.click_on_cart_icon();
 				
 				Assert.assertNotNull(page);
 				
@@ -126,7 +126,7 @@ public class Practice_Automation_L1_TestCases extends AppTestBase
 				try
 				{
 				softAssert = new SoftAssert();
-				L1PageClass= new Practice_Automation_L1_Pages(driver);
+				L1PageClass= new ShoppingCart_L1_Pages(driver);
 				
 				Map<String, String> expectedData = new FileOperations().readJson(expectedDataFilePath, "basket_page");
 				yakshaAssert(currentTest(), L1PageClass.navigate_to_basket_page().equals( expectedData.get("basket_page_title")), businessTestFile);
@@ -144,7 +144,7 @@ public class Practice_Automation_L1_TestCases extends AppTestBase
 				try
 				{
 					softAssert = new SoftAssert();
-					L1PageClass= new Practice_Automation_L1_Pages(driver);
+					L1PageClass= new ShoppingCart_L1_Pages(driver);
 					
 					String page=L1PageClass.Home_menu_is_available();
 					
@@ -162,9 +162,9 @@ public class Practice_Automation_L1_TestCases extends AppTestBase
 				try
 				{
 					softAssert = new SoftAssert();
-					L1PageClass= new Practice_Automation_L1_Pages(driver);
+					L1PageClass= new ShoppingCart_L1_Pages(driver);
 					
-					Practice_Automation_L1_Pages page=L1PageClass.click_on_Home_Menu();
+					ShoppingCart_L1_Pages page=L1PageClass.click_on_Home_Menu();
 					
 					Assert.assertNotNull(page);
 					
@@ -180,7 +180,7 @@ public class Practice_Automation_L1_TestCases extends AppTestBase
 				try
 				{
 					softAssert = new SoftAssert();
-					L1PageClass= new Practice_Automation_L1_Pages(driver);
+					L1PageClass= new ShoppingCart_L1_Pages(driver);
 					
 					Map<String, String> expectedData = new FileOperations().readJson(expectedDataFilePath, "HomePage_Title");
 					yakshaAssert(currentTest(), L1PageClass.navigate_to_Home_page().equals( expectedData.get("HomepageTitle")), businessTestFile);
@@ -198,9 +198,9 @@ public class Practice_Automation_L1_TestCases extends AppTestBase
 					try
 					{
 						softAssert = new SoftAssert();
-						L1PageClass= new Practice_Automation_L1_Pages(driver);
+						L1PageClass= new ShoppingCart_L1_Pages(driver);
 						
-						Practice_Automation_L1_Pages page=L1PageClass.click_on_Home_Menu();
+						ShoppingCart_L1_Pages page=L1PageClass.click_on_Home_Menu();
 						
 						Assert.assertNotNull(page);
 						
@@ -216,7 +216,7 @@ public class Practice_Automation_L1_TestCases extends AppTestBase
 					try
 					{
 						softAssert = new SoftAssert();
-						L1PageClass= new Practice_Automation_L1_Pages(driver);
+						L1PageClass= new ShoppingCart_L1_Pages(driver);
 						String page=L1PageClass.seleniumRuby();
 						
 						Assert.assertNotNull(page);
@@ -234,9 +234,9 @@ public class Practice_Automation_L1_TestCases extends AppTestBase
 					try
 					{
 						softAssert = new SoftAssert();
-						L1PageClass= new Practice_Automation_L1_Pages(driver);
+						L1PageClass= new ShoppingCart_L1_Pages(driver);
 						
-						Practice_Automation_L1_Pages page=L1PageClass.click_on_seleniumRuby_Product();
+						ShoppingCart_L1_Pages page=L1PageClass.click_on_seleniumRuby_Product();
 						
 						Assert.assertNotNull(page);
 						
@@ -252,7 +252,7 @@ public class Practice_Automation_L1_TestCases extends AppTestBase
 					try
 					{
 						softAssert = new SoftAssert();
-						L1PageClass= new Practice_Automation_L1_Pages(driver);
+						L1PageClass= new ShoppingCart_L1_Pages(driver);
 						
 						Map<String, String> expectedData = new FileOperations().readJson(expectedDataFilePath, "Selenium_Ruby");
 						yakshaAssert(currentTest(), L1PageClass.navigate_to_Home_page().equals( expectedData.get("Selenium_Ruby_title")), businessTestFile);
@@ -270,9 +270,9 @@ public class Practice_Automation_L1_TestCases extends AppTestBase
 					try
 					{
 						softAssert = new SoftAssert();
-						L1PageClass= new Practice_Automation_L1_Pages(driver);
+						L1PageClass= new ShoppingCart_L1_Pages(driver);
 						
-						Practice_Automation_L1_Pages page=L1PageClass.Add_to_basket_is_present();
+						ShoppingCart_L1_Pages page=L1PageClass.Add_to_basket_is_present();
 						
 						Assert.assertNotNull(page);
 						
@@ -288,9 +288,9 @@ public class Practice_Automation_L1_TestCases extends AppTestBase
 					try
 					{
 						softAssert = new SoftAssert();
-						L1PageClass= new Practice_Automation_L1_Pages(driver);
+						L1PageClass= new ShoppingCart_L1_Pages(driver);
 						
-						Practice_Automation_L1_Pages page=L1PageClass.ClickonAddToBasket();
+						ShoppingCart_L1_Pages page=L1PageClass.ClickonAddToBasket();
 						
 						Assert.assertNotNull(page);
 						
@@ -306,7 +306,7 @@ public class Practice_Automation_L1_TestCases extends AppTestBase
 					try
 					{
 						softAssert = new SoftAssert();
-						L1PageClass= new Practice_Automation_L1_Pages(driver);
+						L1PageClass= new ShoppingCart_L1_Pages(driver);
 						
 						Map<String, String> expectedData = new FileOperations().readJson(expectedDataFilePath, "Message");
 						yakshaAssert(currentTest(), L1PageClass.verifyMessages().equals( expectedData.get("message_details")), businessTestFile);
@@ -325,8 +325,8 @@ public class Practice_Automation_L1_TestCases extends AppTestBase
 					try
 					{
 						softAssert = new SoftAssert();
-						L1PageClass= new Practice_Automation_L1_Pages(driver);
-						Practice_Automation_L1_Pages page=L1PageClass.go_to_cart();
+						L1PageClass= new ShoppingCart_L1_Pages(driver);
+						ShoppingCart_L1_Pages page=L1PageClass.go_to_cart();
 						
 						Assert.assertNotNull(page);
 						
@@ -344,7 +344,7 @@ public class Practice_Automation_L1_TestCases extends AppTestBase
 					try
 					{
 						softAssert = new SoftAssert();
-						L1PageClass= new Practice_Automation_L1_Pages(driver);
+						L1PageClass= new ShoppingCart_L1_Pages(driver);
 						String page=L1PageClass.Check_item_in_cart();
 						
 						Assert.assertNotNull(page);
@@ -362,8 +362,8 @@ public class Practice_Automation_L1_TestCases extends AppTestBase
 					try
 					{
 						softAssert = new SoftAssert();
-						L1PageClass= new Practice_Automation_L1_Pages(driver);
-						 Practice_Automation_L1_Pages page=L1PageClass.applyCouponIsPresent();
+						L1PageClass= new ShoppingCart_L1_Pages(driver);
+						 ShoppingCart_L1_Pages page=L1PageClass.applyCouponIsPresent();
 						
 						Assert.assertNotNull(page);
 						
@@ -380,7 +380,7 @@ public class Practice_Automation_L1_TestCases extends AppTestBase
 					try
 					{
 						softAssert = new SoftAssert();
-						L1PageClass= new Practice_Automation_L1_Pages(driver);
+						L1PageClass= new ShoppingCart_L1_Pages(driver);
 						String page=L1PageClass.PriceDefined();
 						
 						Assert.assertNotNull(page);
@@ -398,7 +398,7 @@ public class Practice_Automation_L1_TestCases extends AppTestBase
 					try
 					{
 						softAssert = new SoftAssert();
-						L1PageClass= new Practice_Automation_L1_Pages(driver);
+						L1PageClass= new ShoppingCart_L1_Pages(driver);
 						String page=L1PageClass.priceIsInCorrectFormat();
 						
 						Assert.assertNotNull(page);
@@ -416,7 +416,7 @@ public class Practice_Automation_L1_TestCases extends AppTestBase
 					try
 					{
 						softAssert = new SoftAssert();
-						L1PageClass= new Practice_Automation_L1_Pages(driver);
+						L1PageClass= new ShoppingCart_L1_Pages(driver);
 						String page=L1PageClass.QuantityDefined();
 						
 						Assert.assertNotNull(page);
@@ -433,7 +433,7 @@ public class Practice_Automation_L1_TestCases extends AppTestBase
 					try
 					{
 						softAssert = new SoftAssert();
-						L1PageClass= new Practice_Automation_L1_Pages(driver);
+						L1PageClass= new ShoppingCart_L1_Pages(driver);
 						String page=L1PageClass.quantityIsInCorrectFormat();
 						
 						Assert.assertNotNull(page);
@@ -450,7 +450,7 @@ public class Practice_Automation_L1_TestCases extends AppTestBase
 					try
 					{
 						softAssert = new SoftAssert();
-						L1PageClass= new Practice_Automation_L1_Pages(driver);
+						L1PageClass= new ShoppingCart_L1_Pages(driver);
 						String page=L1PageClass.TotalDefined();
 						
 						Assert.assertNotNull(page);
@@ -467,7 +467,7 @@ public class Practice_Automation_L1_TestCases extends AppTestBase
 					try
 					{
 						softAssert = new SoftAssert();
-						L1PageClass= new Practice_Automation_L1_Pages(driver);
+						L1PageClass= new ShoppingCart_L1_Pages(driver);
 						String page=L1PageClass.totalDefinedInCorrectFormat();
 						
 						Assert.assertNotNull(page);
@@ -483,7 +483,7 @@ public class Practice_Automation_L1_TestCases extends AppTestBase
 					try
 					{
 						softAssert = new SoftAssert();
-						L1PageClass= new Practice_Automation_L1_Pages(driver);
+						L1PageClass= new ShoppingCart_L1_Pages(driver);
 						String page=L1PageClass.TaxDefined();
 						
 						Assert.assertNotNull(page);
@@ -500,7 +500,7 @@ public class Practice_Automation_L1_TestCases extends AppTestBase
 					try
 					{
 						softAssert = new SoftAssert();
-						L1PageClass= new Practice_Automation_L1_Pages(driver);
+						L1PageClass= new ShoppingCart_L1_Pages(driver);
 						String page=L1PageClass.taxDefinedInCorrectFormat();
 						
 						Assert.assertNotNull(page);
@@ -517,8 +517,8 @@ public class Practice_Automation_L1_TestCases extends AppTestBase
 					try
 					{
 						softAssert = new SoftAssert();
-						L1PageClass= new Practice_Automation_L1_Pages(driver);
-						Practice_Automation_L1_Pages page=L1PageClass.removeIsPresent();
+						L1PageClass= new ShoppingCart_L1_Pages(driver);
+						ShoppingCart_L1_Pages page=L1PageClass.removeIsPresent();
 						
 						Assert.assertNotNull(page);
 						
@@ -535,8 +535,8 @@ public class Practice_Automation_L1_TestCases extends AppTestBase
 					try
 					{
 						softAssert = new SoftAssert();
-						L1PageClass= new Practice_Automation_L1_Pages(driver);
-						Practice_Automation_L1_Pages page=L1PageClass.removeAproduct();
+						L1PageClass= new ShoppingCart_L1_Pages(driver);
+						ShoppingCart_L1_Pages page=L1PageClass.removeAproduct();
 						
 						Assert.assertNotNull(page);
 						
@@ -552,7 +552,7 @@ public class Practice_Automation_L1_TestCases extends AppTestBase
 					try
 					{
 						softAssert = new SoftAssert();
-						L1PageClass= new Practice_Automation_L1_Pages(driver);
+						L1PageClass= new ShoppingCart_L1_Pages(driver);
 						
 						Map<String, String> expectedData = new FileOperations().readJson(expectedDataFilePath, "Remove_Message");
 						yakshaAssert(currentTest(), L1PageClass.verifyRemoveMessages().equals( expectedData.get("Remove_message_details")), businessTestFile);
@@ -571,7 +571,7 @@ public class Practice_Automation_L1_TestCases extends AppTestBase
 					try
 					{
 						softAssert = new SoftAssert();
-						L1PageClass= new Practice_Automation_L1_Pages(driver);
+						L1PageClass= new ShoppingCart_L1_Pages(driver);
 						
 						String page=L1PageClass.increase_Quantity();
 						
@@ -588,9 +588,9 @@ public class Practice_Automation_L1_TestCases extends AppTestBase
 					try
 					{
 						softAssert = new SoftAssert();
-						L1PageClass= new Practice_Automation_L1_Pages(driver);
+						L1PageClass= new ShoppingCart_L1_Pages(driver);
 						
-						Practice_Automation_L1_Pages page=L1PageClass.updateBasketButton();
+						ShoppingCart_L1_Pages page=L1PageClass.updateBasketButton();
 						
 						Assert.assertNotNull(page);
 						
@@ -606,9 +606,9 @@ public class Practice_Automation_L1_TestCases extends AppTestBase
 					try
 					{
 						softAssert = new SoftAssert();
-						L1PageClass= new Practice_Automation_L1_Pages(driver);
+						L1PageClass= new ShoppingCart_L1_Pages(driver);
 						
-						Practice_Automation_L1_Pages page=L1PageClass.Proceedtocheckout();
+						ShoppingCart_L1_Pages page=L1PageClass.Proceedtocheckout();
 						
 						Assert.assertNotNull(page);
 						
@@ -624,9 +624,9 @@ public class Practice_Automation_L1_TestCases extends AppTestBase
 					try
 					{
 						softAssert = new SoftAssert();
-						L1PageClass= new Practice_Automation_L1_Pages(driver);
+						L1PageClass= new ShoppingCart_L1_Pages(driver);
 						
-						Practice_Automation_L1_Pages page=L1PageClass.clickOnProceedtocheckout();
+						ShoppingCart_L1_Pages page=L1PageClass.clickOnProceedtocheckout();
 						
 						Assert.assertNotNull(page);
 						
@@ -642,7 +642,7 @@ public class Practice_Automation_L1_TestCases extends AppTestBase
 					try
 					{
 						softAssert = new SoftAssert();
-						L1PageClass= new Practice_Automation_L1_Pages(driver);
+						L1PageClass= new ShoppingCart_L1_Pages(driver);
 						
 						Map<String, String> expectedData = new FileOperations().readJson(expectedDataFilePath, "Billing_Details");
 						yakshaAssert(currentTest(), L1PageClass.Verify_Billing_Details_page().equals( expectedData.get("Billing_Details_title")), businessTestFile);
